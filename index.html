@@ -1,0 +1,350 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="description" content="Junior en el área"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/x-icon" href="https://www.creativefabrica.com/wp-content/uploads/2019/03/Monogram-PF-Logo-Design-by-Greenlines-Studios.jpg"><meta name="generator" content="Astro v5.12.3"><title>Juanix Devzone</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.D98dxaWf.js"></script><!-- Cargar tsParticles por CDN --><script type="module">document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".tilt-card");e.length&&window.VanillaTilt.init(e,{max:15,speed:400,glare:!0,"max-glare":.2})});</script><link rel="stylesheet" href="/_astro/components.DH3xbmSa.css">
+<link rel="stylesheet" href="/_astro/index.DtG5jtGo.css"></head> <body class="relative text-black fade-in dark:bg-[#18181b]"> <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2" data-astro-cid-3ef6ksr2> <nav id="main-nav" class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center transition-colors duration-300" data-astro-cid-3ef6ksr2> <a class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500" aria-label="proyectos" href="/#proyectos" data-i18n-key="nav.projects" data-astro-cid-3ef6ksr2> Proyectos </a><a class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500" aria-label="sobre-mi" href="/#sobre-mi" data-i18n-key="nav.about" data-astro-cid-3ef6ksr2> Sobre mí </a><a class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500" aria-label="habilidades" href="/#habilidades" data-i18n-key="nav.skills" data-astro-cid-3ef6ksr2> Habilidades </a><a class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500" aria-label="contacto" href="/#mail" data-i18n-key="nav.contact" data-astro-cid-3ef6ksr2> Contacto </a> <div class="relative ml-1 mr-1" data-astro-cid-x3pjskd3> <button id="theme-toggle-btn" class="appearance-none border-none flex hover:scale-125 transition" data-astro-cid-x3pjskd3 data-astro-transition-persist="astro-ko5uysgj-1"> <span class="sr-only" data-astro-cid-x3pjskd3>Elige el tema</span> <svg id="light" class="theme-toggle-icon size-5 transition-all" data-astro-cid-x3pjskd3="true" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path> <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path> </svg> <svg id="dark" class="theme-toggle-icon absolute size-5 transition-all" data-astro-cid-x3pjskd3="true" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path> </svg> <svg id="system" class="theme-toggle-icon absolute size-5 transition-all" data-astro-cid-x3pjskd3="true" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"></path> <path d="M7 20h10"></path> <path d="M9 16v4"></path> <path d="M15 16v4"></path> </svg> </button> <div id="themes-menu" class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md" data-astro-cid-x3pjskd3 data-astro-transition-persist="astro-d5hlxqxh-2"> <ul data-astro-cid-x3pjskd3> <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm" data-astro-cid-x3pjskd3> Light </li><li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm" data-astro-cid-x3pjskd3> Dark </li><li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm" data-astro-cid-x3pjskd3> System </li> </ul> </div> </div>  <script>
+  let remove = null
+  const matchMedia = window.matchMedia("(prefers-color-scheme: dark)")
+  const themesMenu = document.getElementById("themes-menu")
+
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined") {
+      return localStorage.getItem("theme") ?? "system"
+    }
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light"
+  }
+
+  const updateIcon = (themePreference) => {
+    document.querySelectorAll(".theme-toggle-icon").forEach((element) => {
+      element.style.scale = element.id === themePreference ? "1" : "0"
+    })
+  }
+
+  const updateTheme = () => {
+    if (remove != null) {
+      remove()
+    }
+    matchMedia.addEventListener("change", updateTheme)
+    remove = () => {
+      matchMedia.removeEventListener("change", updateTheme)
+    }
+
+    const themePreference = getThemePreference()
+    const isDark =
+      themePreference === "dark" ||
+      (themePreference === "system" && matchMedia.matches)
+
+    updateIcon(themePreference)
+    document.documentElement.classList[isDark ? "add" : "remove"]("dark")
+
+    // Agregar o remover clase bg-white en el body para modo light
+    if (isDark) {
+      document.body.classList.remove("bg-white")
+    } else {
+      document.body.classList.add("bg-white")
+    }
+  }
+
+  updateTheme()
+
+  document.addEventListener("click", () => themesMenu.classList.remove("open"))
+
+  document.getElementById("theme-toggle-btn").addEventListener("click", (e) => {
+    e.stopPropagation()
+    const isClosed = !themesMenu.classList.contains("open")
+    themesMenu.classList[isClosed ? "add" : "remove"]("open")
+  })
+
+  document.querySelectorAll(".themes-menu-option").forEach((element) => {
+    element.addEventListener("click", (e) => {
+      localStorage.setItem("theme", e.target.innerText.toLowerCase().trim())
+      updateTheme()
+    })
+  })
+
+  document.addEventListener('astro:after-swap', () => {
+    updateTheme();
+    window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
+  })
+</script> </nav> </header> <script type="module">document.addEventListener("astro:page-load",()=>{const s=document.querySelectorAll("section"),l=document.querySelectorAll("header nav a"),o=document.getElementById("main-nav"),n={proyectos:"bg-blue-500/80 dark:bg-blue-700/80","sobre-mi":"bg-emerald-500/80 dark:bg-emerald-700/80",habilidades:"bg-purple-500/80 dark:bg-purple-700/80",contacto:"bg-blue-500/80 dark:bg-blue-700/80"},d=i=>{let r=0,e=null;i.forEach(t=>{t.isIntersecting&&t.intersectionRatio>r&&(r=t.intersectionRatio,e=t.target.id)}),(e==="habilidades-frontend"||e==="habilidades-backend")&&(e="habilidades"),!e&&window.innerHeight+window.scrollY>=document.body.offsetHeight-2&&(e="contacto"),l.forEach(t=>{t.getAttribute("aria-label")===e||t.classList.remove("text-blue-500")}),o&&(o.className="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center transition-colors duration-300",e&&n[e]?o.classList.add(...n[e].split(" ")):o.classList.add("dark:bg-gray-800/90","bg-white/50"))},a=new IntersectionObserver(d,{root:null,rootMargin:"0px",threshold:.3});s.forEach(i=>{a.observe(i)}),document.onvisibilitychange=()=>{document.visibilityState==="hidden"?a.disconnect():s.forEach(i=>{a.observe(i)})}});</script>   <main class="px-4"> <section class="section min-h-screen flex flex-col justify-center items-center py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">  <div class="max-w-xl flex flex-col items-center text-center"> <img class="rounded-full shadow-lg size-40 mb-4" src="https://images-ext-1.discordapp.net/external/eObbEt_b7r4rdMFbLBSeXafmn0ja6H-qtS_RPqTLnrc/%3Fsize%3D4096%26ignore%3Dtrue%29./https/cdn.discordapp.com/avatars/464856609911341068/e2e77d68da3ca5eabe086c5e7aa88cc1.png?format=webp&quality=lossless" alt> <!-- Selector de idioma --> <div class="flex justify-center mb-2 relative"> <button id="lang-btn" type="button" class="bg-black/20 dark:bg-[#222]/70 text-black dark:text-white text-sm rounded-full px-3 py-1 focus:outline-none transition-all duration-200 shadow hover:bg-[#222]/90 flex items-center gap-2"> <span id="lang-selected">Español</span> <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg> </button> <div id="lang-dropdown" class="absolute left-1/2 -translate-x-1/2 mt-2 w-28 bg-[#222]/90 text-white rounded-lg shadow-lg py-1 z-10 hidden"> <button type="button" data-lang="es" class="block w-full text-left px-4 py-2 hover:bg-cyan-700/30 transition" data-i18n-key="lang.selected.es">Spanish</button> <button type="button" data-lang="en" class="block w-full text-left px-4 py-2 hover:bg-cyan-700/30 transition" data-i18n-key="lang.selected.en">English</button> </div> </div> <!-- Título Portafolio --> <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white" data-i18n-key="hero.title">
+Portafolio
+</h1> <p class="mt-6 text-xl text-gray-800 dark:text-gray-300 [&>strong]:text-emerald-400 [&>strong]:font-semibold" data-i18n-key="hero.subtitle">
++1 años de experiencia. <strong>Estudiante de Ingenieria de Software y Ciberseguridad</strong> de Colombia. Especializado en el desarrollo de aplicaciones web y Desarrollo de Bots para Discord
+</p> <!-- Redes sociales debajo de la descripción --> <div class="flex items-center gap-3 mt-6 justify-center"> <a href="https://github.com/newjuanix" target="_blank" rel="noopener" aria-label="GitHub" class="border border-black/10 dark:border-white/10 rounded-xl p-2 bg-white dark:bg-[#23272a] hover:bg-gray-200 dark:hover:bg-[#23272a]/80 text-black dark:text-white flex items-center justify-center"> <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.099 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.138 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2z"></path></svg> </a> <a href="https://discord.com/users/464856609911341068" target="_blank" rel="noopener" aria-label="Discord" class="border border-black/10 dark:border-white/10 rounded-xl p-2 bg-white dark:bg-[#23272a] hover:bg-gray-200 dark:hover:bg-[#23272a]/80 text-black dark:text-white flex items-center justify-center"> <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.447.864-.614 1.249a18.214 18.214 0 0 0-5.487 0 12.683 12.683 0 0 0-.622-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.683 4.369a.064.064 0 0 0-.028.027C.533 8.063-.319 11.671.099 15.243a.082.082 0 0 0 .031.057c2.073 1.523 4.084 2.453 6.042 3.084a.077.077 0 0 0 .084-.027c.466-.638.879-1.312 1.226-2.018a.076.076 0 0 0-.041-.104c-.662-.251-1.294-.555-1.911-.892a.077.077 0 0 1-.008-.127c.128-.096.256-.197.378-.297a.074.074 0 0 1 .077-.01c4.012 1.827 8.354 1.827 12.313 0a.073.073 0 0 1 .078.009c.122.1.25.201.378.297a.077.077 0 0 1-.006.127c-.617.337-1.249.641-1.911.892a.076.076 0 0 0-.04.105c.36.705.774 1.379 1.225 2.018a.076.076 0 0 0 .084.027c1.959-.631 3.97-1.561 6.043-3.084a.077.077 0 0 0 .03-.057c.5-4.09-.838-7.658-3.591-10.847a.061.061 0 0 0-.03-.027zM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.094 2.156 2.418 0 1.334-.946 2.419-2.156 2.419z"></path></svg> </a> </div> <a href="#mail" class="mt-10"> <div class="flex items-center "> <span class="relative inline-flex overflow-hidden rounded-full p-[1px]"> <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span> <div class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap">  <svg class="size-7 mr-2" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path d="M18 15l3 3l-3 3"></path></svg> <span data-i18n-key="hero.cta">Contactame</span>  </div> </span> </div> </a> </div>  </section> <section id="proyectos" data-section="proyectos" class="section mb-16 py-20 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">  <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white undefined">  <svg class="size-12 text-green-400 mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg> <span class="text-3xl md:text-3xl font-bold mb-6" data-i18n-key="projects.title">Proyectos</span>  </h2>  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 mt-20"> <!-- Web Project --> <div class="tilt-card relative bg-white dark:bg-[#1a1a1a] text-black dark:text-white rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.4)] border-2 border-green-400 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-90"> <div class="absolute top-0 right-0 w-5 h-5 bg-blue-500 rounded-bl-lg"></div> <div class="flex justify-center mb-4"> <img src="/projects/undraw_web-app_141a.svg" alt="Web App Illustration" class="w-14 h-14 object-contain transition-all duration-300 ease-in-out"> </div> <h3 class="text-center text-2xl font-bold tracking-tight mb-2" data-i18n-key="projects.web.title">Proyectos Web</h3> <p class="text-center text-sm text-gray-700 dark:text-gray-300 mb-4" data-i18n-key="projects.web.description">Sitios modernos, responsivos y rápidos.</p> <div class="flex justify-center mt-4"> <button class="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 rounded-full text-base font-semibold transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:underline" onclick="openModal('web')" data-i18n-key="projects.web.button">
+Ver proyecto
+</button> </div> </div> <!-- Discord Bot --> <div class="tilt-card relative bg-white dark:bg-[#1a1a1a] text-black dark:text-white rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.4)] border-2 border-cyan-400 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-90"> <div class="absolute top-0 right-0 w-5 h-5 bg-indigo-500 rounded-bl-lg"></div> <div class="flex justify-center mb-4"> <img src="https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg" alt="Discord Logo" class="w-14 h-14 rounded-full object-contain transition-all duration-300 ease-in-out"> </div> <h3 class="text-center text-2xl font-bold tracking-tight mb-2" data-i18n-key="projects.discord.title">Proyectos Discord</h3> <p class="text-center text-sm text-gray-700 dark:text-gray-300 mb-4" data-i18n-key="projects.discord.description">Bots personalizados y automatizaciones para tu comunidad.</p> <div class="flex justify-center mt-4"> <button class="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 rounded-full text-base font-semibold transition-all duration-300 ease-in-out cursor-pointer hover:scale-105 hover:underline" onclick="openModal('discord')" data-i18n-key="projects.discord.button">
+Ver bot
+</button> </div> </div> </div>  </section> <section id="habilidades" data-section="habilidades" class="section undefined scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">   <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden"> <div class="bg-white dark:bg-[#222] rounded-2xl shadow-2xl p-8 max-w-4xl w-full h-[80vh] relative animate-fade-in flex flex-col"> <button onclick="closeModal()" class="absolute top-4 right-4 text-black dark:text-white text-2xl font-bold">&times;</button> <div id="modal-content" class="overflow-y-auto h-full pr-2"> <!-- Aquí se renderiza el componente --> </div> </div> </div> <div class="space-y-8"> <section id="sobre-mi" data-section="sobre-mi" class="section mb-32 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">  <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white undefined">  <svg class="size-12 text-cyan-400 mb-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path><path d="M15 19l2 2l4 -4"></path></svg> <span class="text-3xl md:text-3xl font-bold mb-6" data-i18n-key="about.title">Sobre mí</span>  </h2> <article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row px-4 mt-16"> <div class="bg-white dark:bg-gradient-to-br dark:from-neutral-800 dark:via-neutral-900 dark:to-black p-6 md:p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] max-w-3xl mx-auto border border-white/10 hover:border-cyan-400/30 transition-all duration-300 space-y-4"> <p data-i18n-key="about.p1">
+Soy estudiante de <span class="text-cyan-400 font-medium">Ingeniería de Sistemas</span> con enfoque en <span class="text-cyan-400 font-medium">Ciberseguridad</span>, apasionado por el <span class="text-green-400 font-medium">desarrollo web</span> y la creación de <span class="text-green-400 font-medium">bots</span>.
+</p> <p data-i18n-key="about.p2">
+He trabajado en proyectos relacionados con la <span class="text-cyan-400 font-medium">movilidad sostenible</span> y la <span class="text-cyan-400 font-medium">creacion de bots</span>. Me motivo a resolver problemas reales con soluciones prácticas y funcionales.
+</p> <p data-i18n-key="about.p3">
+Tengo experiencia con tecnologías modernas del entorno web y backend, así como en <span class="text-green-400 font-medium">bases de datos</span>, interfaces intuitivas y herramientas colaborativas.
+</p> <p class="pt-2 border-t border-white/10 text-sm text-gray-400" data-i18n-key="about.p4">
+Siempre busco mejorar en cada proyecto, aprender nuevas herramientas y aportar valor en equipo o de forma autónoma.
+</p> </div> </article>  </section> <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white undefined">  <svg class="size-12 text-green-400 mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg> <span class="text-3xl md:text-3xl font-bold mb-6" data-i18n-key="skills.title">Habilidades</span>  </h2> <section id="skills" class="max-w-6xl mx-auto px-4 mt-16 space-y-12"> <div class="space-y-12"> <h3 class="text-xl font-semibold text-black dark:text-white flex items-center gap-2"> <svg class="w-6 h-6 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path></svg>   <span data-i18n-key="skills.category.frontend"> Frontend </span> </h3> <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"> <div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">HTML5</p> </div><div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">CSS3</p> </div><div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">JavaScript</p> </div><div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://img.icons8.com/color/512/tailwindcss.png" alt="TailwindCSS" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">TailwindCSS</p> </div> </div> </div><div class="space-y-12"> <h3 class="text-xl font-semibold text-black dark:text-white flex items-center gap-2">  <svg class="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="2"></circle><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8M8 16h8M8 8h8"></path></svg>  <span data-i18n-key="skills.category.backend"> Backend y Bases de Datos </span> </h3> <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"> <div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">Node.js</p> </div><div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">MongoDB</p> </div> </div> </div><div class="space-y-12"> <h3 class="text-xl font-semibold text-black dark:text-white flex items-center gap-2">   <svg class="w-6 h-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2" stroke-width="2"></rect><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8h8M8 12h8M8 16h8"></path></svg> <span data-i18n-key="skills.category.languages"> Lenguajes y Librerías </span> </h3> <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"> <div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">Python</p> </div><div class="group bg-white dark:bg-white/5 backdrop-blur-lg p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-black/10 dark:border-white/10 hover:-translate-y-1.5"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord.js" class="h-12 w-12 mx-auto transition-transform duration-300 group-hover:scale-110"> <p class="mt-3 text-center text-black dark:text-white text-sm font-medium opacity-80">Discord.js</p> </div> </div> </div> </section> </div> <section id="experiencia" data-section="experiencia" class="section undefined scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">    </section> <section id="mail" data-section="mail" class="section mt-32 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">  <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white undefined">  <svg class="size-12 text-cyan-400 mb-4" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path d="M3 6l9 6l9 -6"></path><path d="M15 18h6"></path><path d="M18 15l3 3l-3 3"></path></svg> <span class="text-3xl md:text-3xl font-bold mb-6" data-i18n-key="contact.title">Contacto</span>  </h2> <div class=" relative z-10 max-w-screen-xl mx-auto container flex items-center gap-3" data-astro-cid-sqmziqfe> <!-- Input con fondo blanco y borde negro --> <div class="border border-black/30 dark:border-white/30 rounded-xl flex-grow rounded-lg px-5 py-2 bg-white dark:bg-black" data-astro-cid-sqmziqfe> <input type="text" readonly value="newjuanix@gmail.com" class="w-full bg-white dark:bg-black text-black dark:text-white focus:outline-none" style="border: none;" data-astro-cid-sqmziqfe> </div> <!-- Botón de enviar (tipo chat, avión de papel) con tooltip --> <div class="relative flex items-center justify-center" data-astro-cid-sqmziqfe> <a href="mailto:newjuanix@gmail.com" aria-label="Enviar email" id="send-button" class="border border-black/20 rounded-xl px-6 py-2.5 w-auto flex items-center justify-center text-black rounded-lg focus:ring-4 bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-600" data-astro-cid-sqmziqfe> <!-- Ícono tipo avión de papel --> <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white dark:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-cid-sqmziqfe> <path stroke-linecap="round" stroke-linejoin="round" d="M4 4l16 8-16 8v-6l10-2-10-2V4z" data-astro-cid-sqmziqfe></path> </svg> </a> <!-- Tooltip para enviar --> <div id="tooltip-send" class="tooltip" data-astro-cid-sqmziqfe>Enviar email<div class="tooltip-arrow" data-astro-cid-sqmziqfe></div></div> </div> <!-- Botón de copiar con tooltip --> <div class="relative flex items-center justify-center" data-astro-cid-sqmziqfe> <button aria-label="Copiar email" id="copy-button" class="border border-black/20 rounded-xl px-6 py-2.5 w-auto flex items-center justify-center text-black rounded-lg bg-cyan-500 hover:bg-cyan-600 focus:ring-4 dark:bg-cyan-500 dark:hover:bg-cyan-600" data-astro-cid-sqmziqfe> <!-- Icono de copiar --> <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white dark:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-cid-sqmziqfe> <rect x="8" y="8" width="12" height="12" rx="2" ry="2" data-astro-cid-sqmziqfe></rect> <path d="M16 8V6a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2h2" data-astro-cid-sqmziqfe></path> </svg> </button> <!-- Tooltip --> <div id="tooltip" class="tooltip" data-astro-cid-sqmziqfe>
+Email copiado!
+<div class="tooltip-arrow" data-astro-cid-sqmziqfe></div> </div> </div> </div>  <script>
+  const emailToCopy = "newjuanix@gmail.com";
+  let tooltipTimeout;
+
+  const copyButton = document.getElementById("copy-button");
+  const tooltip = document.getElementById("tooltip");
+
+  const sendButton = document.getElementById("send-button");
+  const tooltipSend = document.getElementById("tooltip-send");
+
+  // Tooltip copiar
+  if (copyButton && tooltip) {
+    const arrow = document.createElement("div");
+    arrow.className = "tooltip-arrow";
+    tooltip.appendChild(arrow);
+
+    function showTooltip(message) {
+      tooltip.textContent = message;
+      tooltip.appendChild(arrow);
+      tooltip.classList.add("visible");
+      clearTimeout(tooltipTimeout);
+      let timeoutDuration = 2000;
+      if (message === "Email copiado!") {
+        timeoutDuration = 800; // tooltip disappears faster after copy success
+      }
+      tooltipTimeout = setTimeout(() => {
+        tooltip.classList.remove("visible");
+        tooltipTimeout = null;  // Reset timeout flag here to allow mouseleave to hide tooltip
+      }, timeoutDuration);
+    }
+
+    function handleCopyClick() {
+      showTooltip("Email copiado!");
+      navigator.clipboard.writeText(emailToCopy)
+        .catch(err => {
+          console.error("Error al copiar el email: ", err);
+          showTooltip("Error al copiar.");
+        });
+    }
+
+    copyButton.addEventListener("click", handleCopyClick);
+
+    copyButton.addEventListener("mouseenter", () => {
+      if (!tooltip.classList.contains("visible")) {
+        tooltip.textContent = "Copiar email";
+        tooltip.appendChild(arrow);
+        tooltip.classList.add("visible");
+      }
+    });
+
+    copyButton.addEventListener("mouseleave", () => {
+      if (!tooltipTimeout) {
+        tooltip.classList.remove("visible");
+      }
+    });
+  }
+
+  // Tooltip enviar
+  if (sendButton && tooltipSend) {
+    sendButton.addEventListener("mouseenter", () => {
+      tooltipSend.classList.add("visible");
+    });
+
+    sendButton.addEventListener("mouseleave", () => {
+      tooltipSend.classList.remove("visible");
+    });
+  }
+</script>  </section>  <template id="astro-webproject-template" style="display:none;"> <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 bg-white dark:bg-[#18181b] rounded-2xl shadow-[0_4px_32px_rgba(0,0,0,0.5)] border-2 border-gray-300 dark:border-[#23272a] p-8"> <div class="w-full md:w-1/2"> <div class="relative flex flex-col items-center gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl border-2 border-gray-300 dark:border-[#23272a] bg-white dark:bg-black"> <img alt="Captura de pantalla del proyecto UDrive" class="object-cover object-center w-full h-56 md:h-[320px] transition duration-500 md:scale-110 md:group-hover:scale-105 rounded-xl" loading="lazy" src="/projects/63shots_so.webp"> </div> </div> <div class="w-full md:w-1/2 md:max-w-lg flex flex-col justify-center"> <h3 class="text-3xl md:text-4xl font-bold text-black dark:text-white mb-2 leading-tight" data-i18n-key="web.udrive.title">
+UDrive
+</h3> <div class="flex flex-wrap mt-2 gap-2 justify-start"> <span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#61dafb; color:#61dafb; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-4 h-4"> <span>React</span> </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#3178c6; color:#3178c6; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-4 h-4"> <span>TypeScript</span> </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#646cff; color:#646cff; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://vitejs.dev/logo.svg" alt="Vite" class="w-4 h-4"> <span>Vite</span> </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#e34c26; color:#e34c26; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4"> <span>HTML</span> </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#38bdf8; color:#38bdf8; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4"> <span>CSS</span> </span> </div> <p class="mt-2 text-gray-900 dark:text-gray-300 text-base leading-relaxed whitespace-pre-line" data-i18n-key="web.udrive.description">
+Proyecto desarrollado por varios estudiantes que buscan mejorar la movilidad diaria dentro de la comunidad universitaria, facilitando opciones de transporte más eficientes, económicas y sostenibles. A través del uso compartido de vehículos, se promueve la reducción de dióxido de carbono y del uso excesivo de automóviles particulares.
+</p> <footer class="flex items-end justify-start mt-4 gap-x-4"> <a href="https://udriveusb.netlify.app" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2 bg-gray-200 dark:bg-[#23272a] text-black dark:text-white font-semibold rounded-lg shadow border-2 border-gray-500 dark:border-gray-700 hover:bg-gray-300 dark:hover:bg-[#23272a]/80 transition-colors"> <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path> </svg> <span data-i18n-key="web.udrive.button">Revisar</span> </a> </footer> </div> </article>  </template> <template id="astro-discordbot-template" style="display:none;"> <div class="flex flex-col gap-8"> <div class="flex flex-col md:flex-row items-center bg-white dark:bg-[#18181b] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.4)] border border-gray-300 dark:border-[#23272a] p-6 gap-8 w-full max-w-3xl mx-auto"> <img src="https://images-ext-1.discordapp.net/external/Sji1wqn_zPUBUQVKFWb2mnTMEOefY2-MRizC-7h6FOU/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1390461716361642155/6a7bf8814711654f883e4cc03561bb6b.png?format=webp&quality=lossless" alt="SCP | Master Community" class="w-44 h-44 object-cover object-center rounded-xl border border-gray-300 dark:border-[#23272a] bg-white dark:bg-black mx-auto"> <div class="flex-1 flex flex-col justify-center"> <h2 class="text-2xl md:text-3xl font-bold text-black dark:text-white mb-2" data-i18n-key="discord.scp.name">SCP | Master Community</h2> <div class="flex flex-row gap-2 mb-3 flex-wrap"> <span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#5865F2; color:#5865F2; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://pngimg.com/d/discord_PNG8.png" alt="Discord.js" class="w-4 h-4"> Discord.js </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#43b581; color:#43b581; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4"> Node.js </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#13aa52; color:#13aa52; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-4 h-4"> MongoDB </span> </div> <p class="text-gray-900 dark:text-gray-300 text-base mb-4" data-i18n-key="discord.scp.description"> Bot para la comunidad de SCP... </p> <!-- Botón y explorador de carpetas eliminados --> </div> </div><div class="flex flex-col md:flex-row items-center bg-white dark:bg-[#18181b] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.4)] border border-gray-300 dark:border-[#23272a] p-6 gap-8 w-full max-w-3xl mx-auto"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBiblZLfTYjiZUwfFMzzrEWG-gS80zi5LFJA&s" alt="Tacos and Grill" class="w-44 h-44 object-cover object-center rounded-xl border border-gray-300 dark:border-[#23272a] bg-white dark:bg-black mx-auto"> <div class="flex-1 flex flex-col justify-center"> <h2 class="text-2xl md:text-3xl font-bold text-black dark:text-white mb-2" data-i18n-key="discord.tacos.name">Tacos and Grill</h2> <div class="flex flex-row gap-2 mb-3 flex-wrap"> <span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#5865F2; color:#5865F2; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://pngimg.com/d/discord_PNG8.png" alt="Discord.js" class="w-4 h-4"> Discord.js </span><span class="flex items-center gap-1 px-3 py-0.5 rounded-full border-2 text-sm font-semibold" style="border-color:#43b581; color:#43b581; background:#e5e7eb dark:bg-[#23272a]"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4"> Node.js </span> </div> <p class="text-gray-900 dark:text-gray-300 text-base mb-4" data-i18n-key="discord.tacos.description"> Bot para servidor de Tacos and Grill... </p> <!-- Botón y explorador de carpetas eliminados --> </div> </div> </div> </template>  </section></main>  <script type="module" src="/_astro/index.astro_astro_type_script_index_0_lang.DIZBhjFx.js"></script> <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".tilt-card");
+      if (elements.length) {
+        window.VanillaTilt.init(elements, {
+          max: 15,
+          speed: 10000,
+          easing: "cubic-bezier(.03,.98,.52,.99)",
+          glare: true,
+          "max-glare": 0.2,
+          scale: 1.03,
+        });
+      }
+
+      // Modal logic
+      window.openModal = function(type) {
+        var modal = document.getElementById('project-modal');
+        var content = document.getElementById('modal-content');
+        if (modal && content) {
+          modal.classList.remove('hidden');
+          let template;
+          if (type === 'web') {
+            template = document.getElementById('astro-webproject-template');
+          } else if (type === 'discord') {
+            template = document.getElementById('astro-discordbot-template');
+          }
+
+          if (template) {
+            content.innerHTML = template.innerHTML;
+            // Vuelve a aplicar la traducción al nuevo contenido del modal
+            if (window.setLanguage && window.getLangFromStorage) {
+              const currentLang = window.getLangFromStorage();
+              window.setLanguage(currentLang);
+            }
+          }
+        }
+      }
+      window.closeModal = function() {
+        var modal = document.getElementById('project-modal');
+        var content = document.getElementById('modal-content');
+        if (modal && content) {
+          modal.classList.add('hidden');
+          content.innerHTML = '';
+        }
+      }
+    });
+  </script>  <footer class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"> <div class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"> <span class="text-sm sm:text-center items-center w-full text-zinc-800/90 dark:text-zinc-200/90">© 2025 <span data-i18n-key="footer.text">Hecho con ☕ por Juanix</span> </span> <ul class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"></ul> </div> </footer> <!-- Estilos globales -->  <!-- Scripts: tsParticles y AOS --> <script>
+      // @ts-ignore
+      tsParticles.load("tsparticles", {
+        fpsLimit: 60,
+        background: {
+          color: { value: "#000000" }
+        },
+        particles: {
+          number: {
+            value: 80,
+            density: { enable: true, area: 800 }
+          },
+          color: { value: "#4ade80" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 2, random: true },
+          move: {
+            enable: true,
+            speed: 1,
+            direction: "none",
+            outModes: { default: "out" }
+          },
+          links: {
+            enable: true,
+            distance: 150,
+            color: "#4ade80",
+            opacity: 0.3,
+            width: 1
+          }
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" },
+            onClick: { enable: true, mode: "push" }
+          },
+          modes: {
+            repulse: { distance: 100 },
+            push: { quantity: 4 }
+          }
+        },
+        detectRetina: true
+      });
+    </script> <script type="module">
+      import AOS from "aos";
+      import "aos/dist/aos.css";
+
+      AOS.init({
+        duration: 1200,
+        easing: "ease-out-cubic",
+        once: true,
+        mirror: false
+      });
+    </script> <script type="module" src="/_astro/Layout.astro_astro_type_script_index_1_lang.DIZBhjFx.js"></script> <script type="module" src="/_astro/Layout.astro_astro_type_script_index_2_lang.QPgaj1FP.js"></script> <script>
+      // Eliminar script de cambio de fondo inline para evitar conflictos con Tailwind y toggle
+    </script> <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const lightBtn = document.getElementById("light-toggle");
+        const darkBtn = document.getElementById("dark-toggle");
+
+        if (lightBtn) {
+          lightBtn.addEventListener("click", () => {
+            localStorage.setItem("theme", "light");
+            applyLightMode();
+          });
+        }
+
+        if (darkBtn) {
+          darkBtn.addEventListener("click", () => {
+            localStorage.setItem("theme", "dark");
+            applyDarkMode();
+          });
+        }
+      });
+    </script> <script>(function(){const ui = {"es":{"hero.title":"Portafolio","hero.subtitle":"+1 año de experiencia. <strong>Estudiante de Ingenieria de Software y Ciberseguridad</strong> de Colombia. Especializado en el desarrollo de aplicaciones web y Desarrollo de Bots para Discord","hero.cta":"Contactame","lang.selected.es":"Español","lang.selected.en":"Inglés","nav.projects":"Proyectos","nav.about":"Sobre mí","nav.skills":"Habilidades","nav.contact":"Contacto","footer.text":"Hecho con ☕ por Juanix","projects.title":"Proyectos","about.title":"Sobre mí","skills.title":"Habilidades","about.p1":"Soy estudiante de <span class=\"text-cyan-400 font-medium\">Ingeniería de Sistemas</span> con enfoque en <span class=\"text-cyan-400 font-medium\">Ciberseguridad</span>, apasionado por el <span class=\"text-green-400 font-medium\">desarrollo web</span> y la creación de <span class=\"text-green-400 font-medium\">bots</span>.","about.p2":"He trabajado en proyectos relacionados con la <span class=\"text-cyan-400 font-medium\">movilidad sostenible</span> y la <span class=\"text-cyan-400 font-medium\">creacion de bots</span>. Me motivo a resolver problemas reales con soluciones prácticas y funcionales.","about.p3":"Tengo experiencia con tecnologías modernas del entorno web y backend, así como en <span class=\"text-green-400 font-medium\">bases de datos</span>, interfaces intuitivas y herramientas colaborativas.","about.p4":"Siempre busco mejorar en cada proyecto, aprender nuevas herramientas y aportar valor en equipo o de forma autónoma.","skills.category.frontend":"Frontend","skills.category.backend":"Backend y Bases de Datos","skills.category.languages":"Lenguajes y Librerías","contact.title":"Contacto","projects.web.description":"Sitios modernos, responsivos y rápidos.","projects.web.title":"Proyectos Web","projects.web.button":"Ver proyecto","projects.discord.title":"Proyectos Discord","projects.discord.description":"Bots personalizados y automatizaciones para tu comunidad.","projects.discord.button":"Ver bot","web.udrive.title":"UDrive","web.udrive.description":"Proyecto desarrollado por varios estudiantes que buscan mejorar la movilidad diaria dentro de la comunidad universitaria, facilitando opciones de transporte más eficientes, económicas y sostenibles. A través del uso compartido de vehículos, se promueve la reducción de dióxido de carbono y del uso excesivo de automóviles particulares.","web.udrive.button":"Revisar","discord.scp.name":"SCP | Master Comunity","discord.scp.description":"Bot para la comunidad de SCP, el mismo ofrece<span class=\"text-red-500 font-semibold\"> funcionalidades administrativas, de roleplay y ranking en grupo de roblox.</span>","discord.tacos.name":"Tacos and Grill","discord.tacos.description":"Bot que estuvo funcionando en el servidor de Tacos and Grill mx, ofrecia <span class=\"text-green-500 font-medium\">funcionalidades administrativas y de gestión de pedidos.</span>"},"en":{"hero.title":"Portfolio","hero.subtitle":"+1 Year of experience. <strong>Software Engineering and Cybersecurity Student</strong> from Colombia. Specializing in web application and Discord Bot development.","hero.cta":"Contact Me","lang.selected.es":"Spanish","lang.selected.en":"English","nav.projects":"Projects","nav.about":"About me","nav.skills":"Skills","nav.contact":"Contact","footer.text":"Made with ☕ by Juanix","projects.title":"Projects","about.title":"About Me","skills.title":"Skills","about.p1":"I am a <span class=\"text-cyan-400 font-medium\">Systems Engineering</span> student with a focus on <span class=\"text-cyan-400 font-medium\">Cybersecurity</span>, passionate about <span class=\"text-green-400 font-medium\">web development</span> and creating <span class=\"text-green-400 font-medium\">bots</span>.","about.p2":"I have worked on projects related to <span class=\"text-cyan-400 font-medium\">sustainable mobility</span> and <span class=\"text-cyan-400 font-medium\">bot creation</span>. I am motivated to solve real-world problems with practical and functional solutions.","about.p3":"I have experience with modern web and backend technologies, as well as <span class=\"text-green-400 font-medium\">databases</span>, intuitive interfaces, and collaborative tools.","about.p4":"I always seek to improve in each project, learn new tools, and contribute value both in a team and autonomously.","skills.category.frontend":"Frontend","skills.category.backend":"Backend & Databases","skills.category.languages":"Languages & Libraries","contact.title":"Contact","projects.web.description":"Modern, responsive, and fast websites.","projects.web.title":"Web Projects","projects.web.button":"See projects","projects.discord.title":"Discord Projects","projects.discord.description":"Custom bots and automations for your community.","projects.discord.button":"See bots","web.udrive.title":"UDrive","web.udrive.description":"A project developed by several students seeking to improve daily mobility within the university community, providing more efficient, economical, and sustainable transportation options. Through carpooling, it promotes the reduction of carbon dioxide and the excessive use of private cars.","web.udrive.button":"Check it out","discord.scp.name":"SCP | Master Community","discord.scp.description":"Bot for the SCP community, offering <span class=\"text-red-500 font-semibold\">administrative, roleplay, and Roblox group ranking functionalities.</span>","discord.tacos.name":"Tacos and Grill","discord.tacos.description":"A bot that was active on the Tacos and Grill mx server, offering <span class=\"text-green-500 font-medium\">administrative and order management functionalities.</span>"}};
+const DEFAULT_LANG = "es";
+const LANGUAGES = {"en":"English","es":"Español"};
+
+      window.getLangFromStorage = function() {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('lang')) {
+          return localStorage.getItem('lang');
+        }
+        // Si no, intenta obtenerlo del navegador
+        const browserLang = navigator.language.split('-')[0];
+        if (Object.keys(LANGUAGES).includes(browserLang)) {
+          return browserLang;
+        }
+        // Si no, usa el por defecto
+        return DEFAULT_LANG;
+      }
+
+      window.setLanguage = function(lang) {
+        // Guardar la preferencia en localStorage
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('lang', lang);
+        }
+
+        // Actualizar el atributo lang de la etiqueta <html>
+        document.documentElement.lang = lang;
+
+        // Obtener las traducciones para el idioma seleccionado
+        const translations = ui[lang];
+
+        // Actualizar el texto del botón principal del dropdown
+        const langSelected = document.getElementById('lang-selected');
+        if (langSelected) {
+          langSelected.textContent = LANGUAGES[lang];
+        }
+
+        // Seleccionar todos los elementos que necesitan traducción
+        document.querySelectorAll('[data-i18n-key]').forEach(element => {
+          const key = element.getAttribute('data-i18n-key');
+          if (translations[key]) {
+            // Usamos innerHTML para respetar etiquetas como <strong>
+            element.innerHTML = translations[key];
+          }
+        });
+      }
+
+      // Lógica del dropdown
+      const langBtn = document.getElementById('lang-btn');
+      const langDropdown = document.getElementById('lang-dropdown');
+
+      langBtn?.addEventListener('click', () => {
+        langDropdown?.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (langBtn && langDropdown && !langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+          langDropdown.classList.add('hidden');
+        }
+      });
+
+      // Listeners para los botones de idioma
+      langDropdown?.querySelectorAll('[data-lang]').forEach(button => {
+        button.addEventListener('click', (event) => {
+          const lang = event.currentTarget.getAttribute('data-lang');
+          window.setLanguage(lang);
+          langDropdown.classList.add('hidden');
+        });
+      });
+
+      // Al cargar la página, establecer el idioma guardado o el por defecto
+      document.addEventListener('DOMContentLoaded', () => {
+        const initialLang = window.getLangFromStorage();
+        window.setLanguage(initialLang);
+      });
+    })();</script> </body> </html>
